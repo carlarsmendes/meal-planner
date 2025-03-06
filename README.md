@@ -1,54 +1,83 @@
-# React + TypeScript + Vite
+# 🍽️ Meal Planner App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple meal planner application built with **React + TypeScript + Tailwind CSS**. Users can customize their meal plan by selecting the number of meals, soups, snacks/desserts, and sides. The app then generates a random meal plan and allows users to swap individual items.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ **Select meal preferences** (number of meals, soups, snacks/desserts, and sides)  
+- ✅ **Generate a random meal plan** based on the selection  
+- ✅ **Swap individual items** within the meal plan  
+- ✅ **Responsive UI** with Tailwind CSS  
+- ✅ **Modular folder structure** for scalability  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Setup & Installation
+
+### 1️⃣ Clone the repository
+```sh
+git clone https://github.com/your-username/meal-planner.git
+cd meal-planner
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 2️⃣ Install dependencies & Start the development server
+```sh
+npm install
+npm run dev
 ```
+
+### 3️⃣ Open in browser
+
+Visit: http://localhost:5173/ 
+
+---
+
+## 🖥️ Usage
+
+### 1️⃣ Select Meal Preferences  
+- Choose the number of **meals, soups, snacks/desserts, and sides**.  
+- Click **"Generate Meal Plan"** to proceed.  
+
+### 2️⃣ View Your Meal Plan  
+- A randomly generated meal plan will be displayed.  
+- Click the **"Swap"** button next to any meal item to replace it with another random option.  
+
+### 3️⃣ Restart Meal Plan  
+- Click **"Restart"** to return to the selection screen and start over.  
+
+---
+
+## 🛠️ Technologies Used
+
+- ⚛️ **React** (with Hooks)  
+- 🟦 **TypeScript**  
+- 🎨 **Tailwind CSS**  
+- ⚡ **Vite** (for fast development)  
+
+---
+
+## 🚀 Future Enhancements
+
+- 🔹 **Save meal plans** to local storage  
+- 🔹 **Generate shopping list** after the meal plan for the week is concluded  
+- 🔹 **API integration** for fetching recipes dynamically  
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.  
+
+---
+
+## 📬 Contact
+
+For questions or suggestions, feel free to reach out:  
+
+🔗 **GitHub:** [carlarsmendes](https://github.com/carlarsmendes)  
+
+---
+
+**Enjoy planning your meals for the week!** 🍛🥗🍰  
