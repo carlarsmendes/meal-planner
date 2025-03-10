@@ -1,8 +1,8 @@
 module.exports = {
     content: [
       // Add all the paths where Tailwind CSS should scan for class names.
-      './src/**/*.{html,js,jsx,ts,tsx}', // For React projects, adjust if needed
-      './public/index.html', // Make sure your HTML files are also included
+      "./src/**/*.{js,ts,jsx,tsx}", // This covers all files inside src
+      './index.html', // Make sure your HTML files are also included
     ],
     theme: {
       extend: {
